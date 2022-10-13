@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatIsThat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="default-img" translatesAutoresizingMaskIntoConstraints="NO" id="WKC-E3-BXt">
+                                <rect key="frame" x="21" y="85" width="348" height="404"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCW-jt-dPb">
+                                <rect key="frame" x="104" y="482" width="179" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="OjV-8S-Ekm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please grab a picture first..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eng-eC-QYO">
+                                <rect key="frame" x="55" y="560" width="280" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icc-UZ-qTK">
+                                <rect key="frame" x="134" y="667" width="122" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Grab a picture">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="grabAPicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="elN-Uw-CWI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MCW-jt-dPb" firstAttribute="top" secondItem="WKC-E3-BXt" secondAttribute="bottom" constant="8" id="2r1-hs-pFD"/>
+                            <constraint firstItem="Eng-eC-QYO" firstAttribute="top" secondItem="WKC-E3-BXt" secondAttribute="bottom" constant="71" id="3X2-Wi-aNm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MCW-jt-dPb" secondAttribute="trailing" constant="109" id="5V5-og-cIC"/>
+                            <constraint firstItem="MCW-jt-dPb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="9Dh-8J-Myb"/>
+                            <constraint firstItem="Icc-UZ-qTK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BBM-pO-x7H"/>
+                            <constraint firstItem="WKC-E3-BXt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LSX-da-Stx"/>
+                            <constraint firstItem="WKC-E3-BXt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="MI3-BL-3wY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WKC-E3-BXt" secondAttribute="trailing" constant="5" id="MnW-y8-x0q"/>
+                            <constraint firstItem="MCW-jt-dPb" firstAttribute="top" secondItem="WKC-E3-BXt" secondAttribute="bottom" constant="-7" id="Ste-XZ-Ct5"/>
+                            <constraint firstItem="WKC-E3-BXt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="Vtp-sA-B54"/>
+                            <constraint firstItem="Icc-UZ-qTK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="261" id="Yjm-cn-AEm"/>
+                            <constraint firstItem="Icc-UZ-qTK" firstAttribute="top" secondItem="WKC-E3-BXt" secondAttribute="bottom" constant="178" id="bsA-I1-jZe"/>
+                            <constraint firstItem="Eng-eC-QYO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ixG-NN-ET9"/>
+                            <constraint firstItem="Eng-eC-QYO" firstAttribute="top" secondItem="MCW-jt-dPb" secondAttribute="bottom" constant="30" id="jJK-Nh-geh"/>
+                            <constraint firstItem="WKC-E3-BXt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="rcx-Jw-mq0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Eng-eC-QYO" id="Sxb-r5-1C5"/>
+                        <outlet property="photoSelected" destination="WKC-E3-BXt" id="ORW-a7-7D6"/>
+                        <outlet property="probability" destination="MCW-jt-dPb" id="SZM-LW-LE0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default-img" width="404" height="404"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
